@@ -1,0 +1,41 @@
+{
+    "questions" : [
+        {
+            "text" : "Will you kill a person?",
+            "correct" : false,
+            "points": 10
+    
+        },
+        {
+            "text" : "Bruhhhh",
+            "correct" : false,
+            "points": 10
+    
+        },
+        {
+            "text" : "Wtf?",
+            "correct" : false,
+            "points": 10
+    
+        },
+        {
+            "text" : "Will you kill a person 2 ?",
+            "correct" : false,
+            "points": 10
+    
+        },
+        {
+            "text" : "Bruhhh 44 h",
+            "correct" : false,
+            "points": 10
+    
+        },
+        {
+            "text" : "rtrtrt",
+            "correct" : false,
+            "points": 10
+    
+        }
+    ]
+}
+
