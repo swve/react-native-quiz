@@ -26,6 +26,7 @@
     "react-native-gesture-handler": "~1.3.0",
     "react-native-web": "^0.11.7",
     "react-navigation": "^3.12.0",
+    "react-navigation-transitions": "^1.0.12",
     "sync-storage": "^0.4.0"
   },
   "devDependencies": {

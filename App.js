@@ -36,7 +36,7 @@ debug(){
    
   process(){
     console.log('entered quizz');
-    this.props.navigation.navigate('zab' , {
+    this.props.navigation.navigate('QuizzQ' , {
       questionNum: 0,
     });
   }
@@ -59,7 +59,7 @@ debug(){
 const RootStack = createStackNavigator(
   {
     Home: HomeScreen,
-    zab:QuizzQuestion,
+    QuizzQ:QuizzQuestion,
     
   },
   {

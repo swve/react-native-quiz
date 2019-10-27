@@ -7,32 +7,32 @@
     
         },
         {
-            "text" : "Bruhhhh",
+            "text" : "Do you like Fortnite ?",
             "correct" : false,
             "points": 10
     
         },
         {
-            "text" : "Wtf?",
+            "text" : "Is JUL your favorite singer ?",
             "correct" : false,
             "points": 10
     
         },
         {
-            "text" : "Will you kill a person 2 ?",
+            "text" : "Do you like PIXAR ?",
+            "correct" : true,
+            "points": 10
+    
+        },
+        {
+            "text" : "Did you ever drunk alcohol ?",
             "correct" : false,
             "points": 10
     
         },
         {
-            "text" : "Bruhhh 44 h",
-            "correct" : false,
-            "points": 10
-    
-        },
-        {
-            "text" : "rtrtrt",
-            "correct" : false,
+            "text" : "You think charity is good",
+            "correct" : true,
             "points": 10
     
         }

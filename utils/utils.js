@@ -2,11 +2,8 @@ import * as data from "../assets/questions/questions.json";
 import { AsyncStorage } from 'react-native';
 
 export function getQuestionData(n){
-    //return 'test'
    return data.questions[n];
-    //console.log(data.questions[n]);
 }
-
 
 export function saveScore(scoreInt) {
     let user = {
