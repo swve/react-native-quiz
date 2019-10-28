@@ -110,10 +110,8 @@ const styles = StyleSheet.create({
     },
     {
     headerMode:'none',
-    transitionConfig: () => fromRight(1100), 
-    cardStack: {
-      gesturesEnabled: false,
-      },
+    transitionConfig: () => fromRight(300), 
+    
     },
     
   );

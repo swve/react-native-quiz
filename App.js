@@ -45,12 +45,13 @@ debug(){
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Bienvenue au quiz Purity :) </Text>
+        <Text style={{ height:50 ,  fontSize:20 , marginBottom: 30 }} >Welcome to Purity Quizz</Text>
         <Button
-          title="Démarrer le quizz"
+          style={{ height:150 ,  marginBottom: 30 }} 
+          title="Start"
           onPress={() => this.process() }
         />
-        <Button title="Debug tools  " onPress={() => this.debug() }> </Button>
+        <Button style={{ height:150   }} title="Debug tools  " onPress={() => this.debug() }> </Button>
       </View>
     );
   }

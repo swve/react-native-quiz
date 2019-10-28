@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text , Button } from 'react-native';
 import { displayData, saveScore } from '../utils/utils'
 
 export default class Results extends Component {
@@ -24,6 +24,7 @@ export default class Results extends Component {
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         
         <Text> Your purity is : {this.state.score}</Text>
+        <Button title="Goback"></Button>
       </View>
     );
   }
