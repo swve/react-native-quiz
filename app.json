@@ -24,6 +24,9 @@
     "android": {
       "package": "com.neave.purity"
     },
+    "ios": {
+      "bundleIdentifier": "com.neave.purity"
+    },
     "description": ""
   }
 }

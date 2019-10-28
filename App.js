@@ -26,11 +26,13 @@ class HomeScreen extends React.Component {
 
 
 debug(){
+  /*
   saveScore(2019);
   (async () => {
     console.log(await displayData())
   })()
-
+  */
+ alert("Previously debug..")
 }
 
    

@@ -6,7 +6,7 @@ import { getQuestionData , updateScore } from '../utils/utils'
 import { displayData, saveScore } from '../utils/utils'
 import { AsyncStorage } from 'react-native';
 import Results from '../screens/Results';
-import { zoomIn } from 'react-navigation-transitions';
+import { zoomIn, fromRight } from 'react-navigation-transitions';
 
 //const userScore = SyncStorage.get('userScore'); 
 
@@ -47,24 +47,19 @@ class QuizzQuestion extends Component {
     }
   }
   
-  // Score gestion
-  getScore(){
-    (async () => {
-      alert(await displayData())
-    })()
-  }
+  
 
   addScore(answer){
     if(answer===this.state.info.correct){
       // saving score
-      let finalScore = this.state.score + this.state.info.points ; 
+      let finalScore = ( this.state.score + this.state.info.points ); 
       console.log( "score " + finalScore )
       saveScore(finalScore);
       this.nextQuestion();
     }
     else{
       // saving score
-      let finalScore = this.state.score - this.state.info.points ; 
+      let finalScore = ( this.state.score - this.state.info.points ) ; 
       console.log( "score " + finalScore )
       saveScore(finalScore);
       this.nextQuestion();
@@ -101,7 +96,10 @@ const styles = StyleSheet.create({
     },
     {
     headerMode:'none',
-    transitionConfig: () => zoomIn(1100), 
+    transitionConfig: () => fromRight(1100), 
+    cardStack: {
+      gesturesEnabled: false,
+      },
     },
     
   );
