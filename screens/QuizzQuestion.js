@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import { View, Text, StyleSheet, Button} from 'react-native';
+import { View, Text, StyleSheet, Button , BackHandler , ToastAndroid } from 'react-native';
 import { getQuestionData , updateScore } from '../utils/utils'
-import { displayData, saveScore } from '../utils/utils'
+import { displayData, saveScore , useFocusEffect } from '../utils/utils'
+
 import { AsyncStorage } from 'react-native';
 import Results from '../screens/Results';
 import { zoomIn, fromRight } from 'react-navigation-transitions';
@@ -34,6 +35,17 @@ class QuizzQuestion extends Component {
         score:data,
       })  
     });
+    // Back button
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
+  }
+
+  componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
+  }
+
+  handleBackButton() {
+      ToastAndroid.show('You can\'t return once you started ', ToastAndroid.SHORT);
+      return true;
   }
 
   nextQuestion(){
@@ -88,6 +100,8 @@ const styles = StyleSheet.create({
     },
     
   });
+
+  
 
   const RootStack = createStackNavigator(
     {
