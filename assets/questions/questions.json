@@ -1,41 +1,34 @@
 {
-    "questions" : [
+    "questions": [
         {
-            "text" : "Will you kill a person?",
-            "correct" : false,
+            "text": "Will you kill a person?",
+            "correct": false,
             "points": 10
-    
         },
         {
-            "text" : "Do you like Fortnite ?",
-            "correct" : false,
+            "text": "Do you like Fortnite ?",
+            "correct": false,
             "points": 10
-    
         },
         {
-            "text" : "Is JUL your favorite singer ?",
-            "correct" : false,
+            "text": "Is JUL your favorite singer ?",
+            "correct": false,
             "points": 10
-    
         },
         {
-            "text" : "Do you like PIXAR ?",
-            "correct" : true,
+            "text": "Do you like PIXAR ?",
+            "correct": true,
             "points": 10
-    
         },
         {
-            "text" : "Did you ever drunk alcohol ?",
-            "correct" : false,
+            "text": "Did you ever drunk alcohol ?",
+            "correct": false,
             "points": 10
-    
         },
         {
-            "text" : "You think charity is good",
-            "correct" : true,
+            "text": "You think charity is good",
+            "correct": true,
             "points": 10
-    
         }
     ]
 }
-
