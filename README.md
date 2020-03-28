@@ -1,1 +1,1 @@
-# quizzNeave
+# SimpleQuizz
